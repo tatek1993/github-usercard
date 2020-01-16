@@ -4,8 +4,8 @@
 */
 axios.get("https://api.github.com/users/tatek1993")
 .then(response => {
-  // console.log(response);
-  
+  console.log(response);
+
 })
 
 
@@ -53,6 +53,30 @@ const followersArray = [];
 </div>
 
 */
+function ghProfile(profile) {
+  const newCard = document.createElement("div"),
+        userImg = document.createElement("img"),
+        cardInfo = document.createElement("div"),
+        fullName = document.createElement("h3"),
+        userName = document.createElement("p"),
+        userLocation = document.createElement("p"),
+        userProfile = document.createElement("p"),
+        userGhLink = document.createElement("a"),
+        userFollowers = document.createElement("p"),
+        userFollowing = document.createElement("p"),
+        userBio = document.createElement("p");
+
+  userImg.src = profile;
+  fullName.textContent = 
+  userName.textContent =
+  userLocation.textContent = `Location: $profile.location`;       
+
+  newCard.classList.add("card");
+  cardInfo.classList.add("card-info");
+  fullName.classList.add("name");
+  userName.classList.add("username");
+
+}
 
 /* List of LS Instructors Github username's: 
   tetondan
